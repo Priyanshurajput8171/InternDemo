@@ -9,6 +9,8 @@ import SectionSix from '../components/SectionSix'
 import SectionSeven from '../components/SectionSeven'
 import SectionEight from '../components/SectionEight'
 import SectionNine from '../components/SectionNine'
+import Footer from '../components/Footer'
+import SectionTen from '../components/SectionTen'
 
 
 const Home = () => {
@@ -30,6 +32,8 @@ const Home = () => {
       <SectionSeven/>
       <SectionEight/>
       <SectionNine/>
+      <SectionTen/>
+      <Footer/>
      </main>
     </div>
   )

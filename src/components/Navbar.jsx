@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import {
+  Home,
+  GraduationCap,
+  Users,
+  Ticket,
+  MessageSquare,
+} from "lucide-react";
 
 const navItems = [
   { name: "Home", href: "#" },
@@ -68,6 +75,49 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+    <div className="fixed bottom-0 left-0 right-0 lg:hidden bg-black border-t border-white/10 z-50">
+     <div className="flex justify-around items-center py-3">
+       <a
+         href="#"
+         className="flex flex-col items-center text-gray-400"
+       >
+         <Home size={22} />
+         <span className="text-xs mt-1">Home</span>
+       </a>
+   
+       <a
+         href="#"
+         className="flex flex-col items-center text-[#165dfc]"
+       >
+         <GraduationCap size={22} />
+         <span className="text-xs mt-1">Chapters</span>
+       </a>
+   
+       <a
+         href="#"
+         className="flex flex-col items-center text-gray-400"
+       >
+         <Users size={22} />
+         <span className="text-xs mt-1">Community</span>
+       </a>
+   
+       <a
+         href="#"
+         className="flex flex-col items-center text-gray-400"
+       >
+         <Ticket size={22} />
+         <span className="text-xs mt-1">Events</span>
+       </a>
+   
+       <a
+         href="#"
+         className="flex flex-col items-center text-gray-400"
+       >
+         <MessageSquare size={22} />
+         <span className="text-xs mt-1">Mentorship</span>
+       </a>
+     </div>
+    </div>
     </nav>
   );
 };

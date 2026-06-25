@@ -29,21 +29,44 @@ const SectionOne = () => {
               Open to students from all engineering branches
             </p>
 
-            <div className="flex gap-10">
-               <button className="mt-10 bg-[#165dfc] text-sm hover:bg-sky-600 text-white font-semibold 
-               px-5 py-3 rounded-xl flex items-center gap-3 transition">
-              Apply to Become a Chapter Lead
-            </button>
-            <a href="#search-bar" className="mt-10 bg-transparent border border-gray-600 hover:border-gray-400 min-w-[200px] cursor-pointer
-            text-sm  text-white/60 hover:text-white font-semibold px-5 py-3 rounded-2xl flex justify-center items-center gap-3 transition">
-              check your campus
-            </a>
-            </div>
+          <div className="mt-10 flex flex-col md:flex-row gap-4 md:gap-10 items-center md:items-start">
+             <button
+                className="
+                  w-full md:w-auto
+                  bg-[#165dfc]
+                  hover:bg-sky-600
+                  text-white
+                  font-semibold
+                  text-sm md:text-base
+                  px-5 py-3 md:px-6 md:py-4
+                  rounded-xl
+                  transition
+                "
+              >
+                Apply to Become a Chapter Lead
+              </button>
+            
+              <a
+                href="#search-bar"
+                className="
+                  w-full md:w-auto
+                  border border-gray-600
+                  hover:border-gray-400
+                  text-white/60 hover:text-white
+                  font-semibold
+                  text-sm md:text-base
+                  px-5 py-3 md:px-6 md:py-4
+                  rounded-xl
+                  flex items-center justify-center
+                  transition
+                "
+              >
+                Check Your Campus
+              </a>
+              </div>
 
-            {/* Divider */}
-            <div className="h-px bg-white/10 my-12"></div>
+           <div className="h-px bg-white/10 my-12"></div>
 
-            {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 
               <div>
@@ -77,7 +100,6 @@ const SectionOne = () => {
             </div>
           </div>
 
-          {/* Right Image */}
           <div className="relative">
 
             <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm">
