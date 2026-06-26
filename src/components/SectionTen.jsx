@@ -7,11 +7,9 @@ const SectionTen = () => {
       <div className="max-w-6xl mx-auto">
         <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-black/20 backdrop-blur-sm">
 
-          {/* Background Glow */}
           <div className="absolute -top-32 left-0 h-96 w-96 rounded-full bg-purple-700/10 blur-[120px]" />
           <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-[120px]" />
 
-          {/* Grid Pattern */}
           <div
             className="absolute inset-0 opacity-[0.04]"
             style={{
@@ -24,11 +22,11 @@ const SectionTen = () => {
           />
 
           <div className="relative z-10 px-3 md:px-6 py-5 md:py-10 text-center">
-            <p className="uppercase tracking-[5px] text-[#165dfc] text-xs md:text-sm mb-2">
+            <p className="uppercase tracking-[5px] text-white text-xs md:text-sm mb-2">
               Ready To Lead?
             </p>
 
-            <h2 className="text-4xl md:text-2xl font-bold leading-tight">
+            <h2 className="text-2xl md:text-2xl font-bold leading-tight text-[#165dfc]">
               Your Campus Needs
               <br />
               <span className="text-[#165dfc]">
@@ -42,7 +40,7 @@ const SectionTen = () => {
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[#165dfc] hover:bg-blue-600 text-white font-semibold transition flex items-center justify-center gap-2">
+              <button className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[#165dfc] hover:bg-sky-600 text-white font-semibold transition flex items-center justify-center gap-2">
                 Apply to Become a Chapter Lead
                 <ArrowRight size={18} />
               </button>

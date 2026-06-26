@@ -125,7 +125,7 @@ const SectionSeven = () => {
           <div className="flex justify-center mt-14">
             <button
               onClick={() => setShowAll(true)}
-              className="px-8 py-3 rounded-xl border border-[#165dfc]/40 hover:bg-[#165dfc] transition-all duration-300 flex items-center gap-2"
+                className="bg-[#165dfc] hover:opacity-90 transition px-8 py-3 rounded-xl font-medium flex items-center gap-2"
             >
               View All Performers
               <ArrowRight size={18} />

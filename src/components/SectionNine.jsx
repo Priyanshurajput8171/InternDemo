@@ -1,4 +1,4 @@
-// SectionNine.jsx
+
 
 import React from "react";
 import { ArrowRight } from "lucide-react";
@@ -47,13 +47,13 @@ const SectionNine = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="text-[#165dfc] uppercase tracking-[4px] text-xs mb-4">
+          <p className="text-white uppercase tracking-[4px] text-xs mb-4">
             How The Program Works
           </p>
 
-          <h2 className="text-2xl font-bold text-white mb-4">
+          <h2 className="text-2xl font-bold text-[#165dfc] mb-4">
             From Application to{" "}
-            <span className="text-[#165dfc]">Recognition</span>
+            <span className="text-white">Recognition</span>
           </h2>
 
           <p className="text-gray-400">
@@ -99,9 +99,18 @@ const SectionNine = () => {
             Ready to lead your college chapter?
           </p>
 
-          <button className="bg-[#165dfc] hover:bg-[#0f4ee0] transition-all duration-300 text-black font-semibold px-8 py-4 rounded-2xl inline-flex items-center gap-2">
+          <button className="
+                  md:w-auto
+                  bg-[#165dfc]
+                  hover:bg-sky-600
+                  text-white
+                  font-semibold
+                  text-sm md:text-base
+                  px-5 py-3 md:px-6 md:py-4
+                  rounded-xl
+                  transition
+                  gap-2">
             Apply Now It Takes 5 Minutes
-            <ArrowRight size={18} />
           </button>
         </div>
       </div>

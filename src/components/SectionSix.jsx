@@ -67,7 +67,17 @@ const SectionSix = () => {
               and expand your professional network.
             </p>
 
-            <button className="px-8 py-4 rounded-2xl bg-[#165dfc] text-white font-bold hover:bg-[#165dfc]/80 transition">
+            <button   className="
+                  w-full md:w-auto
+                  bg-[#165dfc]
+                  hover:bg-sky-600
+                  text-white
+                  font-semibold
+                  text-sm md:text-base
+                  px-5 py-3 md:px-6 md:py-4
+                  rounded-xl
+                  transition
+                ">
               Apply as Chapter Lead →
             </button>
           </div>
@@ -125,7 +135,17 @@ const SectionSix = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="px-8 py-4 rounded-xl bg-[#165dfc] text-black font-semibold hover:pointer">
+              <button   className="
+                  w-full md:w-auto
+                  bg-[#165dfc]
+                  hover:bg-sky-600
+                  text-white
+                  font-semibold
+                  text-sm md:text-base
+                  px-5 py-3 md:px-6 md:py-4
+                  rounded-xl
+                  transition
+                ">
                 Apply as Chapter Lead
               </button>
 

@@ -105,7 +105,7 @@ const SectionOne = () => {
             <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm">
 
               <img
-                src="/images/SectionOne.png"
+                src="/images/Campus.png"
                 alt="Community In Your Campus"
                 className="w-full h-full object-cover"
               />

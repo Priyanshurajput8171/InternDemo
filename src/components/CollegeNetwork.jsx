@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CollegeNetwork = () => {
-  // Content from Image 1
+
   const colleges = [
     { name: "Dayananda Sagar College of Engineering", location: "Bangalore" },
     { name: "Dayananda Sagar University", location: "Bangalore" },
@@ -26,7 +26,6 @@ const CollegeNetwork = () => {
   return (
     <section className="bg-transparent w-full  py-16 px-4 md:px-8 text-white font-sans flex flex-col items-center">
       
-      {/* Header Section */}
       <div className="text-center max-w-4xl mb-12">
         <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/70 block mb-4">
           communityX CAMPUS NETWORK
@@ -53,26 +52,35 @@ const CollegeNetwork = () => {
         {colleges.map((college, index) => (
           <div 
             key={index}
-            className="bg-white rounded-2xl p-5 flex flex-col items-center justify-center text-center shadow-xl shadow-black/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-black/30 cursor-default"
+            className="bg-trasparent border border-gray-400 rounded-2xl p-5 flex flex-col items-center justify-center text-center shadow-xl shadow-black/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-black/30 cursor-default"
           >
-            {/* Using requested image for all institutes */}
             <img 
-              src="/image/institute1.png" 
+              src="/images/Campus2.png" 
               alt={college.name} 
-              className="w-10 h-6 object-contain mb-3" 
+              className="w-15 h-15 object-contain mb-3" 
             />
-            <h4 className="text-[#165dfc] font-bold text-[13px] leading-tight">
+            <h4 className="text-white font-bold text-[13px] leading-tight">
               {college.name}
             </h4>
-            <p className="text-[#165dfc]/60 text-xs mt-1">
+            <p className="text-[#165dfc]/60 font-bold text-xs mt-1">
               {college.location}
             </p>
           </div>
         ))}
       </div>
 
-      {/* CTA Button */}
-      <button className="mt-14 bg-white text-[#165dfc] font-bold py-3 px-8 rounded-full shadow-lg shadow-black/10 hover:scale-105 transition-all duration-200 flex items-center gap-2">
+      <button   className="
+                  mt-10
+                  w-full md:w-auto
+                  bg-[#165dfc]
+                  hover:bg-sky-600
+                  text-white
+                  font-semibold
+                  text-sm md:text-base
+                  px-5 py-3 md:px-6 md:py-4
+                  rounded-xl
+                  transition
+                ">
         Start a Chapter at Your Campus
         <span className="text-xl">&rarr;</span>
       </button>

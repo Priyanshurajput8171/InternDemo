@@ -11,6 +11,7 @@ import SectionEight from '../components/SectionEight'
 import SectionNine from '../components/SectionNine'
 import Footer from '../components/Footer'
 import SectionTen from '../components/SectionTen'
+import SectionEleven from '../components/SectionEleven'
 
 
 const Home = () => {
@@ -33,6 +34,7 @@ const Home = () => {
       <SectionEight/>
       <SectionNine/>
       <SectionTen/>
+      <SectionEleven/>
       <Footer/>
      </main>
     </div>
