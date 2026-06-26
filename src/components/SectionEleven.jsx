@@ -18,7 +18,7 @@ const SectionEleven = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-transparent p-4 md:p-6 lg:p-12">
-      <div className="relative w-full max-w-[1400px] min-h-[650px] md:h-[750px] rounded-[30px] md:rounded-[40px] overflow-hidden shadow-2xl bg-black group">
+      <div className="relative w-full max-w-[1200px] min-h-[450px] md:h-[750px] rounded-[30px] md:rounded-[40px] overflow-hidden shadow-2xl bg-black group">
         <div className="absolute inset-0 w-full h-full">
           <img
             src="/images/College.jpg"
@@ -30,7 +30,7 @@ const SectionEleven = () => {
 
         <div className="relative z-10 flex flex-col justify-between h-full p-6 md:p-10 lg:p-14">
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-left md:text-center w-full md:w-auto mb-4 md:mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-left md:text-center w-full md:w-auto mb-2 md:mb-4">
             {statsData.map((stat, index) => (
               <div key={index} className="flex flex-col">
                 <h3 className="text-2xl md:text-4xl font-bold text-[#165dfc]">{stat.value}</h3>
@@ -47,7 +47,7 @@ const SectionEleven = () => {
               360+ Engineering Events.<br />
               Countless Memories.
             </h2>
-            <p className="text-gray-300 text-base md:text-lg lg:text-xl mb-6 font-light max-w-2xl">
+            <p className="text-gray-300 text-base md:text-lg lg:text-xl mb-2 font-light max-w-2xl">
               From workshops to hackathons, our chapters don't just talk tech they build it.
             </p>
           </div>
@@ -68,7 +68,7 @@ const SectionEleven = () => {
             ))}
           </div>
 
-          <div className="mt-8 md:mt-10 flex justify-center md:justify-start w-full">
+          <div className="mt-2 md:mt-2 flex justify-center md:justify-start w-full">
             <button className="
                   w-full md:w-auto
                   bg-[#165dfc]
@@ -83,7 +83,9 @@ const SectionEleven = () => {
               Start a Chapter → Get Featured
             </button>
           </div>
-          <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 text-white text-lg md:text-2xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out pointer-events-none drop-shadow-lg bg-black/30 backdrop-blur-sm px-4 py-2 rounded-lg">
+          <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 text-white text-lg md:text-2xl font-bold opacity-0 
+          group-hover:opacity-100 transition-opacity duration-500 ease-in-out pointer-events-none drop-shadow-lg bg-black/30 backdrop-blur-sm
+           px-4 py-2 rounded-lg">
             HBTU Kanpur
           </div>
 
