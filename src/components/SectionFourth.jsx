@@ -1,11 +1,42 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const item = {
+  hidden: {
+    opacity: 0,
+    y: 60,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
 
 const communities = [
   {
     title: "Software & Technology",
     subtitle: "OSCODE",
     description: "Build, code, and ship real products.",
-    tags: ["Web Dev", "AI / ML", "Cybersecurity", "Open Source", "Cloud & Backend"],
+    tags: [
+      "Web Dev",
+      "AI / ML",
+      "Cybersecurity",
+      "Open Source",
+      "Cloud & Backend",
+    ],
     active: true,
     gradient: "from-cyan-900/50 to-slate-900",
   },
@@ -13,23 +44,44 @@ const communities = [
     title: "Core Engineering",
     subtitle: "OSENGIVERSE",
     description: "Design, build, and engineer the physical world.",
-    tags: ["Mechanical", "Civil", "Industrial", "Manufacturing", "Robotics"],
+    tags: [
+      "Mechanical",
+      "Civil",
+      "Industrial",
+      "Manufacturing",
+      "Robotics",
+    ],
     gradient: "from-emerald-900/40 to-slate-900",
   },
   {
     title: "Electrical & Electronics",
     subtitle: "OSVOLT",
     description: "Power, connect, and automate everything.",
-    tags: ["Electrical", "EV Technology", "Embedded", "IoT", "Power Systems"],
+    tags: [
+      "Electrical",
+      "EV Technology",
+      "Embedded",
+      "IoT",
+      "Power Systems",
+    ],
     gradient: "from-blue-900/40 to-slate-900",
   },
 ];
 
 const SectionFourth = () => {
   return (
-    <section className="bg-transparentpy-24 px-6">
+    <motion.section
+      className="bg-transparent py-24 px-6"
+      variants={container}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <motion.div
+          variants={item}
+          className="text-center mb-16"
+        >
           <p className="text-white uppercase tracking-[4px] text-xs mb-4">
             One Ecosystem • Three Communities
           </p>
@@ -43,20 +95,27 @@ const SectionFourth = () => {
             a specific engineering discipline. Select yours to discover
             opportunities, projects, and resources tailored to your interests.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <motion.div
+          variants={container}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-3"
+        >
           {communities.map((community, index) => (
-            <div
+            <motion.div
               key={index}
+              variants={item}
+              whileHover={{
+                y: -10,
+                scale: 1.03,
+              }}
+              transition={{ duration: 0.25 }}
               className={`
                 relative overflow-hidden rounded-3xl
                 bg-gradient-to-br ${community.gradient}
                 border border-white/10
                 p-8 max-h-[300px]
                 max-w-[320px]
-                transition-all duration-300
-                hover:-translate-y-2
                 hover:border-cyan-400/40
               `}
             >
@@ -93,11 +152,11 @@ const SectionFourth = () => {
                   </p>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
-      </div>
-    </section>
+        </motion.div>
+              </div>
+    </motion.section>
   );
 };
 
