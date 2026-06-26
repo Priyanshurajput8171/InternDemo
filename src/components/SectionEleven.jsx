@@ -18,7 +18,7 @@ const SectionEleven = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-transparent p-4 md:p-6 lg:p-12">
-      <div className="relative w-full max-w-[1200px] min-h-[450px] md:h-[750px] rounded-[30px] md:rounded-[40px] overflow-hidden shadow-2xl bg-black group">
+      <div className="relative w-full max-w-[1200px] min-h-[350px] md:h-[750px] rounded-[30px] md:rounded-[40px] overflow-hidden shadow-2xl bg-black group">
         <div className="absolute inset-0 w-full h-full">
           <img
             src="/images/College.jpg"
